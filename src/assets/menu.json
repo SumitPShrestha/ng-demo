@@ -1,0 +1,21 @@
+[
+
+  {
+    "id": 2,
+    "url": "/home",
+    "displayName": "Home",
+    "icon": "fas fa-home"
+  },
+  {
+    "id": 3,
+    "url": "/about",
+    "displayName": "About",
+    "icon": "far fa-address-card"
+  },
+  {
+    "id": 3,
+    "url": "/contact-us",
+    "displayName": "Contact Us",
+    "icon": "far fa-address-card"
+  }
+]

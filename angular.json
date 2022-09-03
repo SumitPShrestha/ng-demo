@@ -23,9 +23,17 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/materialize-css/dist/css/materialize.css",
+              "src/assets/fontawesome-pro-5.13.0-web/css/fontawesome.css",
+              "src/assets/fontawesome-pro-5.13.0-web/css/all.css",
+              "src/custom-theme.scss",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/materialize-css/dist/js/materialize.js",
+              "src/assets/fontawesome-pro-5.13.0-web/js/fontawesome.js",
+              "src/assets/fontawesome-pro-5.13.0-web/js/all.js"
+            ]
           },
           "configurations": {
             "production": {

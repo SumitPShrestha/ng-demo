@@ -1,0 +1,43 @@
+<mat-toolbar color="primary">
+  <span class="">{{title}}</span>
+
+  <div class="nav-container">
+    <ul class="nav-menu">
+      <li class="nav-item" *ngFor="let item of menu"><a href="{{item.url}}" mat-button><i
+        [ngClass]="item.icon" style="margin-right: 5px;margin-bottom: 4px"></i>{{item.displayName}}</a></li>
+
+      <li class="nav-item right" mat-button>
+        <a *ngIf="!isLoggedIn" mat-button><i  style="margin-right: 5px;margin-bottom: 4px" class="far fa-user"></i>Login</a>
+        <span *ngIf="isLoggedIn">
+          <a  [matMenuTriggerFor]="navMenu" mat-button><i  style="margin-right: 5px;margin-bottom: 4px" class="far fa-user"></i></a>
+          <mat-menu #navMenu="matMenu">
+            <a href="/my-profile" routerLink="my-profile" mat-menu-item>
+                <i class="far fa-user-alt" style="margin-right: 5px;margin-bottom: 4px"></i>
+                 My Profile
+            </a>
+            <a href="/auth/logout" routerLink="auth/logout" mat-menu-item>
+                <i class="fas fa-sign-out" style="margin-right: 5px;margin-bottom: 4px"></i>
+                 Logout
+            </a>
+          </mat-menu>
+        </span>
+
+      </li>
+    </ul>
+    <!--  <span class="right" *ngIf="!isLoggedIn">
+      <a class="right" mat-button
+         routerLink="auth/login"><i [ngClass]="authMenu.icon"
+                                    style="margin-right: 5px;margin-bottom: 4px"></i>
+      </a>
+      </span>
+      <span style="margin-top: 35px" class="right" *ngIf="isLoggedIn && !authMenu.displayName && authMenu.children">
+        <a class="nav-item" mat-button [matMenuTriggerFor]="menu">
+           <i [ngClass]="authMenu.icon"
+              style="margin-right: 5px;margin-bottom: 4px"></i>
+        </a>
+
+
+          </span>-->
+  </div>
+
+</mat-toolbar>
