@@ -7,7 +7,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {LoginComponent} from "./login/login.component";
 import {AuthComponent} from "./auth.component";
 import {NavbarService} from "../components/navbar/navbar.service";
-import {AuthService} from "../auth.service";
+import {AuthService} from "./auth.service";
 
 const authRoutes: Routes = [
   {

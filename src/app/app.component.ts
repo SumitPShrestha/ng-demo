@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {NavigationEnd, Router} from "@angular/router";
 import {Location} from "@angular/common";
-import {AuthService} from "./auth.service";
+import {AuthService} from "./auth/auth.service";
 import {NavbarService} from "./components/navbar/navbar.service";
 import {Menu} from "./components/navbar/Menu";
 import {HttpClient} from "@angular/common/http";

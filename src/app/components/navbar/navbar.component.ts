@@ -1,7 +1,7 @@
 import {AfterViewChecked, AfterViewInit, Component, Input, OnInit, ViewChild} from '@angular/core';
 import {Location} from '@angular/common';
 import {Router, NavigationEnd} from "@angular/router";
-import {AuthService} from "../../auth.service";
+import {AuthService} from "../../auth/auth.service";
 import {NavbarService} from "./navbar.service";
 import {Menu} from "./Menu";
 import {MatMenuTrigger} from "@angular/material/menu";
